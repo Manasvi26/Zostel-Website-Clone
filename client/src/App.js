@@ -4,16 +4,16 @@ import { auth } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Login from "./login";
 import Mainpage from "./main";
-import NavBar from "./Components/Headers/NavBar";
+import Home from "./Components/Pages/Home/Home";
+
+// user ? <Mainpage /> : <Login />
 
 function App() {
   const [user] = useAuthState(auth);
-  // user ? <Mainpage /> : <Login />
 
   return (
     <div>
-      <NavBar />
-      <h1>Hello</h1>
+      <Home />
     </div>
   );
 }
