@@ -43,7 +43,7 @@ export const ZostelHomes = [
     place: "PUSHKAR, RAJASTHAN",
     homeName: "Zostel Home Pushkar",
     description:
-      "A view of the serene Aravalli Hills, a pool to chill in, and tantalizing Rajasthani food all commingle to make Zostel Homes Pushkar the flavourful delight it is. With tents for private rooms, utterly rural milieus made up of fields and faraway hills, and a rustic vibe, the luxury retreat lies at the outskirts of Pushkar city, away from the bustle and still conveniently accessible. A pilgrimage for some, a hippie land for others, Pushkar is an odd and interesting amalgamation of all things travellers and residents want it to be. Known for its peaceful ghats, hike-able hills, and niche market, Pushkar city hails with a breezy vibe. While it gets filled up to the brim during the Pushkar Camel Fair and one week of Holi, the town certainly has a charm that’ll make you stay for longer than you’d expect to whenever you pay it a visit.",
+      "A view of the serene Aravalli Hills, a pool to chill in, and tantalizing Rajasthani food all commingle to make Zostel Homes Pushkar the flavourful delight it is. With tents for private rooms, utterly rural milieus made up of fields and faraway hills, and a rustic vibe, the luxury retreat lies at the outskirts of Pushkar city, away from the bustle and still conveniently accessible. A pilgrimage for some, a hippie land for others, Pushkar is an odd and interesting amalgamation of all things travellers and residents want it to be. Known for its peaceful ghats, hike-able hills, and niche market, Pushkar city hails with a breezy vibe. While it gets filled up to the brim during the Pushkar Camel Fair and one week of Holi, the town certainly has a charm that'll make you stay for longer than you'd expect to whenever you pay it a visit.",
   },
   {
     imageUrl:
@@ -126,3 +126,40 @@ export const ZostelHomes = [
 //   homeName: "",
 //   description: "",
 // },
+
+export const whatsNewData = [
+  {
+    id: 1,
+    imageUrl:
+      "https://img.cdn.zostel.com/cache/_d99e046cd28f10acbb8e56fce3de03a7/_DSC5318comp_233x260.jpg",
+    title: "ZOSTEL- BACK IN DALHOUSIE!",
+    text: "Bring back our hostel in Dalhousie after a great revamp! Your holiday in this beautiful town of Chamba valley got all the more bright, comfy, and happening.",
+  },
+  {
+    id: 2,
+    imageUrl:
+      "https://img.cdn.zostel.com/cache/_63c53f45137e478cbf5830dd327da511/4_233x260.jpg",
+    title: "ZOSTEL- NOW IN DOBHI (NAGGAR)",
+    text: "Overlooking the serene Fojal stream, rich fruit orchards, and the towering mountains of Kullu, Zostel Dobhi invites you to explore the offbeat Fojal valley of Himachal Pradesh",
+  },
+  {
+    id: 3,
+    imageUrl:
+      " https://img.cdn.zostel.com/cache/_7f057ea6f7e23b3841eb793d88fb9ae3/RoamOkPlease_233x260.jpg",
+    title: "TRAVEL BACK SERIES- ROAM OK PLEASE!",
+    text: " Zostel brings you our very own travel web series. Every Monday, we'll be taking you on exciting new adventures across Zostel destinations in India—and maybe beyond! .",
+  },
+  {
+    id: 4,
+    imageUrl:
+      "https://img.cdn.zostel.com/cache/_7ae4c3cd5e2b39a512bbf05ac0053ea9/2_233x260.jpg",
+    title: "ZOSTEL HOME WAYANAD (VYTHIRI)",
+    text: "Bring back our hostel in Dalhousie after a great revamp! Your holiday in this beautiful town of Chamba valley got all the more bright, comfy, and happening.",
+  },
+];
+
+// https://img.cdn.zostel.com/cache/_63c53f45137e478cbf5830dd327da511/4_233x260.jpg
+
+// https://img.cdn.zostel.com/cache/_7f057ea6f7e23b3841eb793d88fb9ae3/RoamOkPlease_233x260.jpg
+
+// https://img.cdn.zostel.com/cache/_7ae4c3cd5e2b39a512bbf05ac0053ea9/2_233x260.jpg

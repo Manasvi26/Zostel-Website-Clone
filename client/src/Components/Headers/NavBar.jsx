@@ -8,6 +8,8 @@ const NavStyle = styled.div`
   height: 54px;
   border: 2px solid red;
   padding: 7px 14px;
+  position: "fixed";
+  zindex: "10000";
 
   img {
     width: 182.5px;
