@@ -28,7 +28,7 @@ const ZostelHomeCard = () => {
               sx={{
                 maxWidth: 385,
                 padding: "8px",
-                height: "473px",
+                height: "450px",
                 borderBottom: "0.1px solid #F1563F",
               }}
             >
@@ -53,12 +53,12 @@ const ZostelHomeCard = () => {
                 </Typography>
                 <Typography
                   style={{
-                    height: "120px",
+                    height: "96px",
                     fontWeight: 400,
                     fontSize: "17px",
                     color: "#43474b",
                     lineHeight: "23px",
-
+                    // border: "1px solid blue",
                     overflow: "hidden",
                   }}
                   variant="body2"
