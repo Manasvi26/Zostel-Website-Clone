@@ -71,7 +71,7 @@ const ZostelHomesCarousel = () => {
           margin: "auto",
           width: "85%",
           // border: "1px solid red",
-          backgroundColor: "#EDEEEA",
+          backgroundColor: "#EDEEEA", //grey background
         }}
       >
         <Carousel
