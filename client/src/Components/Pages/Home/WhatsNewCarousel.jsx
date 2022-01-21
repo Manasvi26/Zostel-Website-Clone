@@ -24,7 +24,7 @@ const WhatsNewCarousel = () => {
     <div>
       <div
         style={{
-          width: "85%",
+          width: "86%",
           margin: "auto",
           display: "flex",
           justifyContent: "centre",
@@ -46,7 +46,7 @@ const WhatsNewCarousel = () => {
         style={{
           margin: "auto",
 
-          width: "85%",
+          width: "86%",
           // border: "1px solid red",
           backgroundColor: "#EDEEEA",
         }}
@@ -73,14 +73,12 @@ const WhatsNewCarousel = () => {
               <div
                 className="whatsNewCard"
                 style={{
-                  position: "relative",
-
                   width: "535px",
 
                   display: "flex",
-                  gap: "10px",
+                  gap: "0px",
 
-                  border: "1px solid yellow",
+                  // border: "1px solid yellow",
                   height: "315px",
                   borderBottom: "0.1px solid orange",
                   marginLeft: "0px",
@@ -97,7 +95,8 @@ const WhatsNewCarousel = () => {
                     // border: "1px solid green",
                     backgroundColor: "#ffffff",
                     padding: "5px 5px",
-                    paddingTop: "20px",
+                    paddingTop: "25px",
+                    paddingLeft: "13px",
                   }}
                 >
                   <div style={{ color: "#897967", fontWeight: 500 }}>
