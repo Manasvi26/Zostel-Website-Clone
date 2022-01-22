@@ -1,3 +1,7 @@
+.images-container-top{
+    margin-bottom: 16px;
+}
+
 .headerimg{
     height: 450px;
     display: grid;
@@ -7,10 +11,8 @@
     cursor: zoom-in;
     text-align: center;
     box-sizing: border-box;
-    max-width: 67%;
-    margin-left: 16%;
-    margin-top: 1%;
-    margin-bottom: 90%;
+    margin: 10px auto 0;
+    width:89.5%
 }
 .subimg{
     height:546px;
