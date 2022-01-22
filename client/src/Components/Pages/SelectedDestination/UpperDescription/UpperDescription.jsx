@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import "./UpperDescription.css";
+import "../UpperDescription/UpperDescription.css";
 import {MdWifi,MdRoomService,MdTerrain,MdSportsEsports,MdFreeBreakfast,MdAirlineSeatIndividualSuite,MdHotTub,MdCasino,MdLuggage,MdLocalLaundryService,MdLocalDrink,MdRestaurant,MdBathtub,MdLayers}  from "react-icons/md";
 import {VscVm} from "react-icons/vsc"
 import {HiLightBulb} from "react-icons/hi"
@@ -62,7 +62,7 @@ export const UpperDescription=()=>{
         }
     }
 
-    return (<div className="upperDesc-container">
+    return (<div className="images-container-top">
          <div className="headerimg">
              <div className="subimg">
                  <img style={{borderRadius:"8px 0 0 8px"}} src="https://img.cdn.zostel.com/zostel/gallery/images/kR55bIDpRYC-2wYqnlT6jA/manali-20201112102605.jpg?w=946" alt="" />
@@ -75,8 +75,8 @@ export const UpperDescription=()=>{
                  </div>
              </div>
          </div>
-        <div style={{display: "flex",flexDirection:"row",border:"2px solid red",marginTop:"-80%"}}>
-            <div  style={{marginLeft:"11%"}}>
+        <div style={{display: "flex",flexDirection:"row",marginTop:"190px"}}>
+            <div  style={{marginLeft:"6%"}}>
                 <h1 style={{color:"#f15824",  fontWeight:"bolder"}}>Zostel Manali</h1>
                 <div id="init" style={{display:"block"}}>
                   <p style={{align:"center",fontStretch:"ultra-expanded",color:"#4d585b", fontSize:"18px", lineHeight:"1.5em",fontWeight:"bolder",overflow: "hidden", boxSizing: "border-box",border: "0 solid #e2e8f0"}}>
@@ -107,7 +107,7 @@ export const UpperDescription=()=>{
                    
 
             </div>
-            <div style={{display: 'flex', flexDirection: 'row',border: '1px solid black',marginLeft:"2%",marginTop:"2%",paddingTop:"1%"}}>
+            <div style={{display: 'flex', flexDirection: 'row',marginLeft:"2%",marginTop:"2%",paddingTop:"1%"}}>
                 <ul style={{listStyleType:"none"}}>
                     <li><MdTerrain style={{width:"20px",height:"25px"}}/><span style={{color:"#4d585b",paddingBottom:"15px",verticalAlign:"Top"}}>&nbsp;<strong>Mountain View</strong></span></li>
                     <li><MdWifi style={{width:"20px",height:"25px"}}/><span style={{color:"#4d585b",paddingBottom:"15px",verticalAlign:"Top"}}>&nbsp;<strong>Free Wi-Fi</strong></span></li>
@@ -134,5 +134,6 @@ export const UpperDescription=()=>{
         </div>
     </div>)
 }
+export default UpperDescription
 
 
