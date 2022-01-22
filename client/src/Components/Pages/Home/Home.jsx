@@ -7,7 +7,7 @@ import SelectionBox from "./SelectionBox";
 import WhatsNewCarousel from "./WhatsNewCarousel";
 import ZostelHomesCarousel from "./ZostelHomesCarousel";
 
-const Home = () => {
+export const Home = () => {
   return (
     <div style={{ height: "600vh" }}>
       <NavBar />
@@ -40,5 +40,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
