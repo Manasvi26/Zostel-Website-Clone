@@ -6,7 +6,7 @@ const NavStyle = styled.div`
   margin: auto;
   width: 98%;
   height: 43px;
-  border: 2px solid red;
+  // border: 2px solid red;
   padding: 7px 14px;
   position: "fixed";
   top: "0";
