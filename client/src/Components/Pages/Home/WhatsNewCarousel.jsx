@@ -20,6 +20,7 @@ const WhatsNewCarousel = () => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
+  console.log("6666666");
   return (
     <div>
       <div

@@ -11,6 +11,8 @@ const Calender = () => {
   const [value1, setValue1] = React.useState(new Date());
   const [value2, setValue2] = React.useState(new Date());
 
+  console.log("2222222");
+
   return (
     <div style={{ display: "flex", gap: "10px" }}>
       <LocalizationProvider dateAdapter={AdapterDateFns}>

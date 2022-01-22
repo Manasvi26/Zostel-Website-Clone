@@ -19,6 +19,7 @@ const useStyle = makeStyles({
 
 const Banner = () => {
   const classes = useStyle();
+  console.log("1111111");
   return (
     <div>
       <Carousel

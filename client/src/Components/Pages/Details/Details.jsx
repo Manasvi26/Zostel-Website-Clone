@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Details.css";
-import mainlogo from '../../../Assets/images/mainLogo.svg'
+import mainlogo from '../../../Assets/images/mainLogo.svg';
+import {Footer} from '../SelectedDestination/Footer/Footer'
 
 
 export const Details = () => {
@@ -198,7 +199,7 @@ export const Details = () => {
                 </section>
 
             </div>
-
+            < Footer />
         </>
     )
 }

@@ -28,7 +28,6 @@ const BookYourStay = () => {
         yearT: "2022",
 
     }
-    const navigate=useNavigate();
 
     return <>
         <div className='bookYourStay-head'>
@@ -101,6 +100,7 @@ const DifferentRange = () => {
         rooms: []
     });
     const [totalAmountIs, setTotalAmountis] = useState(null);
+    const navigate=useNavigate();
 
     const avalDatesDetails = [
         {

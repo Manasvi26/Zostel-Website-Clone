@@ -30,6 +30,7 @@ const ZostelHomesCarousel = () => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
+  console.log("77777777");
 
   return (
     <div>

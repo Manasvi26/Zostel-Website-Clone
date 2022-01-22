@@ -57,6 +57,7 @@ const DestinationsCarouselStyles = styled.div`
 `;
 
 const DestinationsCarousel = () => {
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -74,6 +75,7 @@ const DestinationsCarousel = () => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
+  console.log("3333333");
   return (
     <DestinationsCarouselStyles>
       <div>

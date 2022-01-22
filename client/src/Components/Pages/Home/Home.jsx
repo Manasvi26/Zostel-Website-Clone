@@ -8,6 +8,7 @@ import WhatsNewCarousel from "./WhatsNewCarousel";
 import ZostelHomesCarousel from "./ZostelHomesCarousel";
 
 export const Home = () => {
+  console.log("44444444");
   return (
     <div style={{ height: "600vh" }}>
       <NavBar />
