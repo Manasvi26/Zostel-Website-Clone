@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./Details.css";
-import dateFormat from "dateformat";
 import mainlogo from "../../Assets/mainLogo.svg";
 
 
