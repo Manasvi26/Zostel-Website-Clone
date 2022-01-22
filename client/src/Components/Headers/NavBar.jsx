@@ -6,10 +6,11 @@ const NavStyle = styled.div`
   margin: auto;
   width: 98%;
   height: 43px;
-  // border: 2px solid red;
+  border: 2px solid red;
   padding: 7px 14px;
   position: "fixed";
-  zindex: "10000";
+  top: "0";
+  z-index: "100";
 
   img {
     width: 161.5px;
@@ -73,7 +74,16 @@ const NavBar = () => {
     "https://s3.ap-south-1.amazonaws.com/zo-static/website/img/zostel-logo.png";
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "#FFFFFF",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 9999,
+      }}
+    >
       <NavStyle>
         <img src={zostelLogo} alt="zostelLogo" />
         <div className="navContentOuterContainer">

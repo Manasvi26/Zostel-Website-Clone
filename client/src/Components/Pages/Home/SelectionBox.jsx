@@ -7,6 +7,7 @@ const SelectionBoxStyle = styled.div`
   .innerContainer {
     widht: 98%;
     height: 97%;
+
     // border: 2px solid blue;
 
     .upperBigDiv {
@@ -62,11 +63,18 @@ const SelectionBox = () => {
           className="outerContainer"
           style={{
             width: "69.1%",
+            position: "absolute",
+            top: "64%",
+            left: "15%",
+            zIndex: "1",
             height: "107px",
             // border: "2px solid red",
+
             margin: "auto",
             padding: "10px",
             backgroundColor: "#28190c",
+
+            marginTop: "20px",
           }}
         >
           <div className="innerContainer">
