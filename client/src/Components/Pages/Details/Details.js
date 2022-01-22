@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Details.css";
-import mainlogo from '../../../Assets/mainLogo.svg'
+import mainlogo from '../../../Assets/images/mainLogo.svg'
 
 
 export const Details = () => {
