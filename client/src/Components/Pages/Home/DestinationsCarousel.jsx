@@ -38,17 +38,17 @@ const DestinationsCarouselStyles = styled.div`
       align-items: center;
       background-color: #ffffff;
       // border: 1px solid red;
-      width: 244px;
-      height: 218px;
+      width: 198px;
+      height: 180px;
       box-shadow: 4px 2px 8px 1px rgb(233 235 235 / -22);
 
       img {
-        width: 244px;
-        height: 162px;
+        width: 199px;
+        height: 132px;
       }
 
       div {
-        font-size: 23px;
+        font-size: 19px;
         color: #808382;
         margin-top: 12px;
       }
@@ -93,7 +93,7 @@ const DestinationsCarousel = () => {
           }}
         >
           <div
-            style={{ color: "#474B4B", fontWeight: "600", fontSize: "30px" }}
+            style={{ color: "#474B4B", fontWeight: "750", fontSize: "23px" }}
           >
             ZOSTEL DESTINATIONS
           </div>
@@ -102,7 +102,7 @@ const DestinationsCarousel = () => {
               color: "#474B4B",
               fontWeight: "600",
               fontSize: "20px",
-              marginLeft: "1188px",
+              marginLeft: "925px",
             }}
           >
             Explore
@@ -115,7 +115,7 @@ const DestinationsCarousel = () => {
         <div
           style={{
             width: "85%",
-            height: "474px",
+            height: "384px",
             margin: "auto",
             // border: "2px solid red",
             backgroundColor: "#EDEEEA",
@@ -156,8 +156,8 @@ const DestinationsCarousel = () => {
               </div>
 
               <div className="innerBox">
-                <img src={mcleod} alt="" />
-                <div>MCLEOD</div>
+                <img src={munroe} alt="" />
+                <div>MUNROE</div>
               </div>
             </div>
 

@@ -31,13 +31,13 @@ const WhatsNewCarousel = () => {
           textAlign: "center",
           alignItems: "center",
           gap: "20px",
-          //   border: "1px solid red",
+          // border: "1px solid red",
           color: "##474B4B",
           height: "70px",
           marginTop: "20px",
         }}
       >
-        <div style={{ color: "#474B4B", fontWeight: "600", fontSize: "30px" }}>
+        <div style={{ color: "#474B4B", fontWeight: "750", fontSize: "23px" }}>
           WHAT'S NEW
         </div>
       </div>
@@ -49,6 +49,7 @@ const WhatsNewCarousel = () => {
           width: "86%",
           // border: "1px solid red",
           backgroundColor: "#EDEEEA",
+          height: "275px",
         }}
       >
         <Carousel
@@ -73,42 +74,55 @@ const WhatsNewCarousel = () => {
               <div
                 className="whatsNewCard"
                 style={{
-                  width: "535px",
+                  width: "423px",
 
                   display: "flex",
                   gap: "0px",
 
                   // border: "1px solid yellow",
-                  height: "315px",
+                  height: "274px",
                   borderBottom: "0.1px solid orange",
                   marginLeft: "0px",
                 }}
               >
                 <img
                   src={item.imageUrl}
-                  style={{ width: "277px" }}
+                  style={{ width: "232px", height: "274px" }}
                   alt="image"
                 />
                 <div
                   style={{
                     display: "grid",
                     // border: "1px solid green",
+                    height: "255px",
                     backgroundColor: "#ffffff",
-                    padding: "5px 5px",
-                    paddingTop: "25px",
-                    paddingLeft: "13px",
+                    padding: "16px 6px 2px 8px",
                   }}
                 >
-                  <div style={{ color: "#897967", fontWeight: 500 }}>
+                  <div
+                    style={{
+                      color: "#897967",
+                      fontWeight: 500,
+                      fontSize: "13px",
+                    }}
+                  >
                     LAUNCH
                   </div>
-                  <h3 style={{ color: "#43505B" }}>{item.title}</h3>
+                  <h3
+                    style={{
+                      color: "#43505B",
+                      fontSize: "14px",
+                      fontWeight: "800",
+                    }}
+                  >
+                    {item.title}
+                  </h3>
                   <div
                     style={{
                       fontWeight: 400,
-                      fontSize: "17px",
+                      fontSize: "14px",
                       color: "#43474b",
-                      lineHeight: "25px",
+                      lineHeight: "19px",
                     }}
                   >
                     {item.text}

@@ -5,37 +5,36 @@ const NavStyle = styled.div`
   display: flex;
   margin: auto;
   width: 98%;
-  height: 54px;
+  height: 43px;
   // border: 2px solid red;
   padding: 7px 14px;
   position: "fixed";
   zindex: "10000";
 
   img {
-    width: 182.5px;
-    height: 51px;
+    width: 161.5px;
+    height: 42px;
   }
 
   .navContentOuterContainer {
     display: flex;
 
-    width: 1080px;
+    // width: 1080px;
     gap: 3px;
 
     height: 57px;
     // border: 2px solid green;
-    margin-left: 600px;
+    margin-left: 345px;
 
     .navInnerContent {
       height: 48px;
       display: flex;
       gap: 7px;
       font-weight: 400;
-      font-size: large;
+      font-size: 16px;
       // border: 1px solid blue;
       padding-top: 8px;
 
-      //   padding-left: 7px;
       padding-right: 19px;
       // background-color: yellow;
     }
@@ -44,10 +43,9 @@ const NavStyle = styled.div`
       display: flex;
       gap: 7px;
       font-weight: 400;
-      font-size: large;
+      font-size: 16px;
       //   border: 2px solid blue;
       padding-top: 8px;
-      padding-left: 7px;
 
       padding-right: 19px;
 

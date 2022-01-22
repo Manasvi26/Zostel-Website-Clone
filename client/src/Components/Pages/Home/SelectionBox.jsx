@@ -28,7 +28,7 @@ const SelectionBoxStyle = styled.div`
         // text-align: center;
         color: #ffffff;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 16px;
       }
     }
     .lowerBigDiv {
@@ -46,7 +46,7 @@ const SelectionBoxStyle = styled.div`
         color: #f1563f;
         background-color: #ffffff;
         font-weight: 380;
-        font-size: 20px;
+        font-size: 16px;
         // justify-content: center;
         align-items: center;
       }
@@ -61,8 +61,8 @@ const SelectionBox = () => {
         <div
           className="outerContainer"
           style={{
-            width: "70%",
-            height: "140px",
+            width: "69.1%",
+            height: "107px",
             // border: "2px solid red",
             margin: "auto",
             padding: "10px",
@@ -83,7 +83,7 @@ const SelectionBox = () => {
             </div>
             <div className="lowerBigDiv">
               <div className="innerBoxLowerDiv">
-                <div style={{ marginLeft: "130px" }}>SELECT DESTINATION</div>
+                <div style={{ marginLeft: "95px" }}>SELECT DESTINATION</div>
                 <div style={{ marginTop: "6px", marginLeft: "73px" }}>
                   <AiFillCaretDown />
                 </div>
@@ -100,7 +100,7 @@ const SelectionBox = () => {
               >
                 <div
                   style={{
-                    marginLeft: "160px",
+                    marginLeft: "136px",
 
                     color: "#ffffff",
                   }}
