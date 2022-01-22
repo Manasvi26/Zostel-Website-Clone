@@ -3,6 +3,7 @@ import { faUser, faKey, faHotTub, faWifi, faTv, faDumpster, faMountain } from '@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
 import { MdArrowRightAlt, MdDelete } from 'react-icons/md'
+import { useNavigate } from 'react-router-dom';
 
 export const RangeSelector = () => {
     return <>
@@ -27,6 +28,7 @@ const BookYourStay = () => {
         yearT: "2022",
 
     }
+    const navigate=useNavigate();
 
     return <>
         <div className='bookYourStay-head'>
@@ -307,7 +309,7 @@ const DifferentRange = () => {
                                 <div className='sumy-bookNow-common-3'><span><span>₹</span><span></span>{totalAmountIs}</span></div>
                             </div>
                             <div className='des-booknow-btn-final-container'>
-                                <button className='des-booknow-btn-final'>Book now</button>
+                                <button onClick={()=>{navigate("/details")}} className='des-booknow-btn-final'>Book now</button>
                             </div>
                         </div> : null
                     }

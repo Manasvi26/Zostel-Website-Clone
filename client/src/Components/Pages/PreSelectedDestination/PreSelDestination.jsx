@@ -10,7 +10,6 @@ export const PreSelDestination = () => {
     const navigate = useNavigate();
 
     const navigteToDest = () => {
-        console.log("here")
         navigate('/destination')
     }
 
