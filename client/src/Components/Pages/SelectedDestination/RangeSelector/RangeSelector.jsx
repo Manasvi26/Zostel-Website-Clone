@@ -57,6 +57,7 @@ const BookYourStay = () => {
     </>
 }
 
+
 const DifferentRange = () => {
 
     
