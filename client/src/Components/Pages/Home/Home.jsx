@@ -1,4 +1,5 @@
 import React from "react";
+import LandingPageFooter from "../../Footers/LandingPageFooter";
 import NavBar from "../../Headers/NavBar";
 import Banner from "./Banner";
 import Calender from "./Calender";
@@ -13,7 +14,7 @@ import ZostelHomesCarousel from "./ZostelHomesCarousel";
 
 const Home = () => {
   return (
-    <div style={{ height: "600vh" }}>
+    <div style={{ height: "550vh" }}>
       <NavBar />
 
       <Banner />
@@ -53,6 +54,11 @@ const Home = () => {
       <br />
       <br />
       <GuestReviews />
+      <br />
+      <br />
+      <br />
+      <br />
+      <LandingPageFooter />
     </div>
   );
 };
