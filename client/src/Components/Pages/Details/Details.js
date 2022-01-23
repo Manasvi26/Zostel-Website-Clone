@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import "./Details.css";
+<<<<<<< HEAD
 import mainlogo from "../../../Assets/images/mainLogo.svg";
+=======
+import dateFormat from "dateformat";
+import mainlogo from "../../Assets/mainLogo.svg";
+>>>>>>> f980d7076e211b7fcc33bdade97b39f44f16412f
 export const Details = () => {
   
     
