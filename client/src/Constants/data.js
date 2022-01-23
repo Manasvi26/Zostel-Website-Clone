@@ -163,3 +163,5 @@ export const whatsNewData = [
 // https://img.cdn.zostel.com/cache/_7f057ea6f7e23b3841eb793d88fb9ae3/RoamOkPlease_233x260.jpg
 
 // https://img.cdn.zostel.com/cache/_7ae4c3cd5e2b39a512bbf05ac0053ea9/2_233x260.jpg
+
+
