@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import "./Details.css";
 import mainlogo from '../../../Assets/images/mainLogo.svg';
-import {Footer} from '../SelectedDestination/Footer/Footer'
+import {Footer} from '../SelectedDestination/Footer/Footer';
+import { useSelector } from 'react-redux';
 
 
 export const Details = () => {
@@ -15,6 +16,17 @@ export const Details = () => {
         agree: true,
 
     });
+
+    const { loading, items, total, error } = useSelector((state) => {
+        return {
+            loading: state.cart.loading,
+            items: state.cart.items,
+            total: state.cart.total,
+            error: state.cart.error
+        }
+    });
+
+    console.log(items,total);
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;

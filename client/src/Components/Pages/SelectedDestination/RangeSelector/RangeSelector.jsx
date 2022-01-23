@@ -4,8 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
 import { MdArrowRightAlt, MdDelete } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom';
+import {useDispatch} from 'react-redux'
+import {addItemError,addItemLoading,addItemSuccess} from '../../../../Features/Cart/Actions'
 
 export const RangeSelector = () => {
+
     return <>
         <div className='bookYourStay-container'>
             <BookYourStay />
@@ -56,6 +59,8 @@ const BookYourStay = () => {
 
 const DifferentRange = () => {
 
+    
+
     const roomsAva = [
         {
             id: "1",
@@ -101,6 +106,7 @@ const DifferentRange = () => {
     });
     const [totalAmountIs, setTotalAmountis] = useState(null);
     const navigate=useNavigate();
+    const dispatch=useDispatch();
 
     const avalDatesDetails = [
         {
@@ -172,7 +178,9 @@ const DifferentRange = () => {
             setTotalAmountis(selectedRoomsIs.rooms.reduce(function (tot, rooms) {
                 return tot + parseInt(rooms.price);
             }, 0))
-    }, [selectedRoomsIs])
+
+            dispatch(addItemSuccess({selectedRoomsIs,totalAmountIs}));
+    }, [selectedRoomsIs,totalAmountIs])
 
     const handleRemoveSelectedRoom = (el) => {
         setselectedroomIs({
