@@ -1,0 +1,66 @@
+.page{
+    width:400px;
+    height: 350px;
+   
+margin-left:30%;
+box-shadow: 2px 2px 2px 2px rgb(245, 238, 238);
+
+}
+.input2{
+    
+    display: flex;
+    /* gap: 0.5rem; */
+    justify-content: center;
+    align-items: center;
+    width: 265px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 58px;
+
+}
+.info{
+    margin-left: 10%;
+}
+.imgs{
+width: 80px;
+    float: left;
+    margin-left: 24px;
+}
+h4.ghouse{
+    float: left;
+    margin-left: 9px;
+    margin-top: -3px;
+}
+.lake{
+    
+    margin-left: -509px;
+    margin-right: 176px
+}
+.guest{
+    
+    margin-left: -509px;
+    margin-top: 5px;
+    margin-right: 176px
+
+
+}
+.otp{
+    float: left;
+    margin-left: 101px;
+    margin-bottom: 5px;
+    text-align: left; 
+}
+.buttons{
+
+    background: #e77968;
+    color: white;
+    display: flex;
+    /* gap: 0.5rem; */
+    border:none;
+    justify-content: center;
+    align-items: center;
+    width: 265px;
+    height: 38px;
+    margin-bottom: 10px;
+    margin-left: 61px;
+}
