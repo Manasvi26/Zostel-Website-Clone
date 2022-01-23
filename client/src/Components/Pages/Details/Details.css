@@ -48,7 +48,7 @@
   }
   section.info-top-cont .left .login .login-btn button {
     background: #ffffff;
-    color: #e77968;
+    color: #F1563F;
     display: flex;
     gap: 0.5rem;
     justify-content: center;
@@ -246,7 +246,7 @@
   }
   
   section.info-top-cont .left .guest-info .form-input label::after {
-    color: rgb(238, 128, 118);
+    color: #F1563F;
     content: "*";
     display: inline;
     font-weight: bold;
@@ -273,7 +273,7 @@
     margin-bottom: 0.25rem;
   }
   section.info-top-cont .left .guest-info form p span {
-    color: #f78877;
+    color: #F1563F;
   }
   
   section.policy {
