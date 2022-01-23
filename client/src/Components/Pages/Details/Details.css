@@ -99,9 +99,11 @@
     
   }
   section.info-top-cont .right .detail .detail-1 img {
-    width: 71px;
-    height: 54px;
+    width: 75px;
+    height: 62px;
     border-radius: 6px;
+    margin-top: 16%;
+
   }
   section.info-top-cont .right .detail .detail-2 p {
     margin-bottom: 0.2rem;

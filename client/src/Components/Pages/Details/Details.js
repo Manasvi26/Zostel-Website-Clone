@@ -119,9 +119,9 @@ export const Details = () => {
                                 <img src="https://img.cdn.zostel.com/zostel/gallery/images/s40gOMmTTraGlABTpUKs1w/superior-2-bed-mixed-dorm-with-shared-bathr_23DXLDc.jpg?w=64" alt="" />
                             </div>
                             <div className='detail-2'>
-                                <p className='detail-name'>4 Bed Mixed Dorm</p>
+                                <p style={{marginRight :'30%'}}>4 Bed Mixed Dorm</p>
                                 <div className='detail-3'>
-                                    <p style={{marginLeft :'5%'}}>₹ 699 <span> x  1 night</span></p>
+                                    <p style={{marginLeft :'5%',marginBottom:'-5%'}}>₹ 699 <span> x  1 night</span></p>
                                     <p>₹ 699</p>
 
                                 </div>
