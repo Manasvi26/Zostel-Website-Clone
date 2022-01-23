@@ -12,7 +12,7 @@ const LiveItNow = () => {
           position: "absolute",
           color: "#FFFFFF",
           top: "33%",
-          left: "37%",
+          left: "35%",
           zIndex: "1",
         }}
       >
