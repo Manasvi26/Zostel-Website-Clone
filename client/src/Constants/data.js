@@ -164,4 +164,17 @@ export const whatsNewData = [
 
 // https://img.cdn.zostel.com/cache/_7ae4c3cd5e2b39a512bbf05ac0053ea9/2_233x260.jpg
 
+export const ZostelEscape = [
+  {
+    imageUrl:
+      "https://img.cdn.zostel.com/cache/_2da25d3a2dc0b7260c1bcc77af8d0d64/Jaisalmer_desert_safari_500x400.jpg",
 
+    // details: "./Assets/images/pushkar.svg",
+    // details:""
+  },
+  {
+    imageUrl:
+      "https://img.cdn.zostel.com/cache/_2da25d3a2dc0b7260c1bcc77af8d0d64/Jaisalmer_desert_safari_500x400.jpg",
+    // details: "./Assets/images/safari_details2.png",
+  },
+];
