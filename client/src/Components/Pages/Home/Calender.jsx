@@ -11,8 +11,6 @@ const Calender = () => {
   const [value1, setValue1] = React.useState(new Date());
   const [value2, setValue2] = React.useState(new Date());
 
-  console.log("2222222");
-
   return (
     <div style={{ display: "flex", gap: "10px" }}>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -25,7 +23,7 @@ const Calender = () => {
           renderInput={({ inputRef, inputProps, InputProps }) => (
             <Box
               sx={{
-                width: "185px",
+                width: "148px",
                 display: "flex",
                 justifyContent: "space-between",
                 padding: "10px",
@@ -39,7 +37,7 @@ const Calender = () => {
                   border: "none",
                   color: "#f1563f",
                   width: "100px",
-                  fontSize: "18px",
+                  fontSize: "16px",
                   fontWeight: "380",
                   // border: "1px solid red",
                 }}

@@ -1,25 +1,28 @@
 import React from "react";
+import LandingPageFooter from "../../Footers/LandingPageFooter";
 import NavBar from "../../Headers/NavBar";
 import Banner from "./Banner";
 import Calender from "./Calender";
 import DestinationsCarousel from "./DestinationsCarousel";
+import FeaturedHostels from "./FeatureHostels";
+import GuestReviews from "./GuestReviewsCarousel";
+import LiveItNow from "./LiveItNow";
 import SelectionBox from "./SelectionBox";
 import WhatsNewCarousel from "./WhatsNewCarousel";
+import ZostelEscapeCarousel from "./ZostelEscapeCarousel";
 import ZostelHomesCarousel from "./ZostelHomesCarousel";
 
-export const Home = () => {
-  console.log("44444444");
+const Home = () => {
   return (
-    <div style={{ height: "600vh" }}>
+    <div style={{ height: "550vh" }}>
       <NavBar />
+
       <Banner />
-      <br />
-      <br />
-      <br />
-      <br />
+
       <SelectionBox />
       <br />
       <br />
+      <LiveItNow />
       <br />
       <br />
       <DestinationsCarousel />
@@ -38,6 +41,26 @@ export const Home = () => {
       <ZostelHomesCarousel />
       <br />
       <br />
+      <br />
+      <br />
+      <ZostelEscapeCarousel />
+      <br />
+      <br />
+      <br />
+      <br />
+      <FeaturedHostels />
+      <br />
+      <br />
+      <br />
+      <br />
+      <GuestReviews />
+      <br />
+      <br />
+      <br />
+      <br />
+      <LandingPageFooter />
     </div>
   );
 };
+
+export default Home;

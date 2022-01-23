@@ -1,0 +1,152 @@
+@media (min-width: 768px) {
+  .face {
+    background-position-x: -10px;
+    background-position-y: -10px;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/zo-static/website/img/ic-social.png");
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    font-size: 0.0001px;
+  }
+  .insta {
+    background-position-x: -78px;
+    background-position-y: -10px;
+    background-size: initial;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/zo-static/website/img/ic-social.png");
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    font-size: 0.0001px;
+  }
+  .twi {
+    background-position-x: -146px;
+    background-position-y: -10px;
+    background-size: initial;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/zo-static/website/img/ic-social.png");
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    font-size: 0.0001px;
+  }
+  .you {
+    background-position-x: -214px;
+    background-position-y: -10px;
+    background-size: initial;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/zo-static/website/img/ic-social.png");
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    font-size: 0.0001px;
+  }
+  .social {
+    display: grid;
+    grid-template-columns: repeat(4, 8%);
+    margin-top: 1%;
+    gap: 7%;
+  }
+  .socialhead {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 31px;
+    padding: 0;
+  }
+  .rights {
+    margin-top: 1%;
+    font-size: 14px;
+  }
+  .inp {
+    width: 90%;
+    box-shadow: 0px 3px 4.8px 0.2px rgb(0 0 0 / 20%);
+    height: 40px;
+    margin-bottom: 8%;
+    border: none;
+  }
+  .first {
+    box-shadow: 0px 3px 4.8px 0.2px rgb(0 0 0 / 20%);
+    height: 40px;
+    margin-bottom: 8%;
+    border: none;
+  }
+  .btn {
+    font-family: Arial;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffff;
+    background-image: linear-gradient(#43474b, #43474b);
+    box-shadow: 0px 2px 3.9px 0.1px rgb(0 0 0 / 24%);
+    width: 92%;
+    height: 45px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255);
+  }
+  ::placeholder {
+    font-family: Arial;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 1.4%;
+    text-align: center;
+  }
+  .start {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    line-height: 2;
+    gap: 5%;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 2.5;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 5.5%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .submain {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 25% 25%;
+    grid-gap: 2%;
+  }
+  .main {
+    width: 100%;
+    background-color: rgb(217, 224, 224);
+    color: black;
+    padding: 28px;
+  }
+}

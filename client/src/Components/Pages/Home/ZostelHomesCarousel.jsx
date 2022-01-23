@@ -30,7 +30,6 @@ const ZostelHomesCarousel = () => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
-  console.log("77777777");
 
   return (
     <div>
@@ -49,7 +48,7 @@ const ZostelHomesCarousel = () => {
           marginTop: "20px",
         }}
       >
-        <div style={{ color: "#474B4B", fontWeight: "600", fontSize: "30px" }}>
+        <div style={{ color: "#474B4B", fontWeight: "750", fontSize: "23px" }}>
           ZOSTEL HOMES
         </div>
         <div
@@ -57,7 +56,7 @@ const ZostelHomesCarousel = () => {
             color: "#474B4B",
             fontWeight: "600",
             fontSize: "20px",
-            marginLeft: "1290px",
+            marginLeft: "1013px",
           }}
         >
           Explore
@@ -82,7 +81,7 @@ const ZostelHomesCarousel = () => {
           draggable={false}
           centerMode={true}
           infinite={true}
-          autoPlay={true}
+          autoPlay={false}
           autoPlaySpeed={10000}
           keyBoardControl={true}
           showDots={false}
@@ -100,15 +99,15 @@ const ZostelHomesCarousel = () => {
                   maxWidth: 385,
                   padding: "8px",
                   paddingTop: "0px",
-                  height: "446px",
+                  height: "377px",
                   borderBottom: "0.1px solid #F1563F",
                   // boxShadow: "15px 5px 5px #EFEFEC",
-                  marginRight: "20px",
+                  marginRight: "15px",
                 }}
               >
                 <CardMedia
                   component="img"
-                  height="240"
+                  height="200"
                   marginTop="0px"
                   paddingTop="0px"
                   image={item.imageUrl}
@@ -119,9 +118,9 @@ const ZostelHomesCarousel = () => {
                     gutterBottom
                     style={{
                       fontWeight: 800,
-                      fontSize: "20px",
+                      fontSize: "15px",
                       color: "#616161",
-                      lineHeight: "27px",
+                      lineHeight: "18px",
                     }}
                     component="div"
                   >
@@ -129,11 +128,11 @@ const ZostelHomesCarousel = () => {
                   </Typography>
                   <Typography
                     style={{
-                      height: "96px",
-                      fontWeight: 400,
-                      fontSize: "17px",
+                      height: "92px",
+                      fontWeight: 200,
+                      fontSize: "14px",
                       color: "#43474b",
-                      lineHeight: "23px",
+                      lineHeight: "22px",
                       // border: "1px solid blue",
                       overflow: "hidden",
                     }}
@@ -148,7 +147,9 @@ const ZostelHomesCarousel = () => {
                     style={{
                       backgroundColor: "#F1563F",
                       width: "373px",
-                      height: "48px",
+                      height: "40px",
+                      borderRadius: "none",
+                      fontSize: "14px",
                     }}
                     variant="contained"
                     size="large"

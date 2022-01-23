@@ -19,9 +19,8 @@ const useStyle = makeStyles({
 
 const Banner = () => {
   const classes = useStyle();
-  console.log("1111111");
   return (
-    <div>
+    <div style={{ marginTop: "61px" }}>
       <Carousel
         autoPlay={true}
         animation="fade"
