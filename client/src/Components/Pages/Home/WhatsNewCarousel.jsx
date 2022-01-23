@@ -2,8 +2,11 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { whatsNewData } from "../../../Constants/data";
+import { useNavigate } from "react-router-dom";
 
 const WhatsNewCarousel = () => {
+  const Navigate = useNavigate();
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -135,6 +138,7 @@ const WhatsNewCarousel = () => {
                       border: "none",
                       height: "46px",
                     }}
+                    onClick={() => Navigate("/predestination")}
                   >
                     EXPLORE
                   </button>

@@ -7,12 +7,15 @@ import Typography from "@mui/material/Typography";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useNavigate } from "react-router-dom";
 
 import { FaChevronRight } from "react-icons/fa";
 // import rightArrow from "../../../../public/icons/rightArrow.svg";
 import { ZostelHomes } from "../../../Constants/data";
 
 const ZostelHomesCarousel = () => {
+  const Navigate = useNavigate();
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -144,6 +147,7 @@ const ZostelHomesCarousel = () => {
                 </CardContent>
                 <CardActions>
                   <Button
+                    onClick={() => Navigate("/predestination")}
                     style={{
                       backgroundColor: "#F1563F",
                       width: "373px",

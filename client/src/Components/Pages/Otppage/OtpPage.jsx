@@ -1,19 +1,107 @@
-import React from 'react';
-import "./OtpPage.css"
+import React from "react";
+import "./OtpPage.css";
+import { useSelector } from "react-redux";
+import NavBar from "../../Headers/NavBar";
+import { Footer } from "../SelectedDestination/Footer/Footer";
+import { useNavigate } from "react-router-dom";
+
 function OtpPage() {
-  return <div className="page">
-      <h3 style={{marginTop:'20px'}}>Enter OTP to confirm</h3>
-      <div className="info">
-      <img className="imgs" src="https://img.cdn.zostel.com/zostel/gallery/images/s40gOMmTTraGlABTpUKs1w/superior-2-bed-mixed-dorm-with-shared-bathr_23DXLDc.jpg?w=64" alt=""/>
-      <h4 className='ghouse'style={{marginTop:'0%'}}>The Green House</h4>
-      <h5 className='lake'>Sait Lake</h5>
-      <p className='guest'style={{color:'grey'}}>2 Guests</p>
+  const Navigate = useNavigate();
+
+  const { loading, items, total, error } = useSelector((state) => {
+    return {
+      loading: state.cart.loading,
+      items: state.cart.items,
+      total: state.cart.total,
+      error: state.cart.error,
+    };
+  });
+
+  return (
+    <div>
+      <NavBar />
+
+      <div className="page" style={{ marginTop: "10%", marginLeft: "35%" }}>
+        <h3
+          style={{
+            marginTop: "20px",
+            marginLeft: "141px",
+            marginBottom: "30px",
+          }}
+        >
+          Enter OTP to confirm
+        </h3>
+        <div className="info">
+          <img
+            className="imgs"
+            src="https://img.cdn.zostel.com/zostel/gallery/images/s40gOMmTTraGlABTpUKs1w/superior-2-bed-mixed-dorm-with-shared-bathr_23DXLDc.jpg?w=64"
+            alt=""
+          />
+          <h4
+            className="ghouse"
+            style={{ marginTop: "0%", marginLeft: "19px" }}
+          >
+            The Green House
+          </h4>
+          <h5 className="lake">&nbsp;Sait Lake</h5>
+          <p className="guest" style={{ color: "grey", marginLeft: "127px" }}>
+            2 Guests
+          </p>
+          <div
+            style={{
+              fontWeight: "600",
+              fontSize: "16px",
+              marginTop: "7px",
+              paddingTop: "12px",
+              marginLeft: "125px",
+            }}
+          >
+            Payble Amount : {total}/-
+          </div>
+        </div>
+        <h6
+          className="otp"
+          style={{
+            marginTop: "28px",
+            marginBottom: "15px",
+            marginLeft: "116px",
+          }}
+        >
+          Enter OTP sent to 9168105437
+        </h6>
+        <input
+          required
+          id="inp"
+          className="input2"
+          type="text"
+          name="OTP"
+          placeholder="enter otp"
+          style={{ marginLeft: "78px" }}
+        />
+
+        <button
+          onClick={() => Navigate("/receipt")}
+          className="buttons"
+          style={{
+            marginLeft: "78px",
+            width: "270px",
+            backgroundColor: "#de533d",
+          }}
+        >
+          Confirm
+        </button>
       </div>
-      <h6 className='otp'>Enter OTP sent to 915888500</h6>
-      <input required id="inp"  className="input2"type="text" name="OTP"  placeholder='oooooo' />
-    
-      <button className='buttons'>confirm</button>
-  </div>;
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <br />
+      <br />
+      <Footer />
+    </div>
+  );
 }
 
-export {OtpPage};
+export { OtpPage };

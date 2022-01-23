@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { AiFillCaretDown } from "react-icons/ai";
 import Calender from "./Calender";
+import { useNavigate } from "react-router-dom";
 
 const SelectionBoxStyle = styled.div`
   .innerContainer {
@@ -56,6 +57,8 @@ const SelectionBoxStyle = styled.div`
 `;
 
 const SelectionBox = () => {
+  const Navigate = useNavigate();
+
   return (
     <SelectionBoxStyle>
       <div>
@@ -112,6 +115,7 @@ const SelectionBox = () => {
 
                     color: "#ffffff",
                   }}
+                  onClick={() => Navigate("/destination")}
                 >
                   BOOK NOW
                 </div>

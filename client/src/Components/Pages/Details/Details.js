@@ -1,11 +1,27 @@
 import React, { useState } from "react";
 import "./Details.css";
+import { useSelector } from "react-redux";
 
 // import mainLogo from "../../../Assets/images/mainLogo.svg";
 
 // import mainLogo from "../../../Assets/image/mainLogo.svg";
 
+import { useNavigate } from "react-router-dom";
+
 export const Details = () => {
+  const Navigate = useNavigate();
+
+  const { loading, items, total, error } = useSelector((state) => {
+    return {
+      loading: state.cart.loading,
+      items: state.cart.items,
+      total: state.cart.total,
+      error: state.cart.error,
+    };
+  });
+  // console.log(items);
+  // console.log(total);
+
   const [fdata, setFData] = useState({
     firstname: "",
     middlename: "",
@@ -25,6 +41,7 @@ export const Details = () => {
     });
   };
   const handleSubmit = (e) => {
+    Navigate("/otp-page");
     e.preventDefault();
     if (
       fdata.address.length <= 10 &&
@@ -90,7 +107,7 @@ export const Details = () => {
                 <h4>Guest Information</h4>
               </div>
 
-              <form onSubmit={handleSubmit}>
+              <form>
                 <div className="form-input name">
                   <label>Name</label>
                   <input
@@ -181,18 +198,15 @@ export const Details = () => {
             </div>
             <div className="detail">
               <div className="detail-1">
-                <img
-                  src="https://img.cdn.zostel.com/zostel/gallery/images/s40gOMmTTraGlABTpUKs1w/superior-2-bed-mixed-dorm-with-shared-bathr_23DXLDc.jpg?w=64"
-                  alt=""
-                />
+                <img src={items.rooms[0].image} alt="" />
               </div>
               <div className="detail-2">
                 <p style={{ marginRight: "30%" }}>4 Bed Mixed Dorm</p>
                 <div className="detail-3">
                   <p style={{ marginLeft: "5%", marginBottom: "-5%" }}>
-                    ₹ 699 <span> x 1 night</span>
+                    {total} <span> x 1 night</span>
                   </p>
-                  <p>₹ 699</p>
+                  <p>{total}</p>
                 </div>
               </div>
             </div>

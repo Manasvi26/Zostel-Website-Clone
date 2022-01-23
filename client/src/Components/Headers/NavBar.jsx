@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { AiFillCaretDown } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+
 const NavStyle = styled.div`
   display: flex;
   margin: auto;
@@ -67,6 +69,8 @@ const dropDownStyle = styled.div`
 `;
 
 const NavBar = () => {
+  const Navigate = useNavigate();
+
   const zostelLogo =
     "https://s3.ap-south-1.amazonaws.com/zo-static/website/img/zostel-logo.png";
 
@@ -82,7 +86,7 @@ const NavBar = () => {
       }}
     >
       <NavStyle>
-        <img src={zostelLogo} alt="zostelLogo" />
+        <img onClick={() => Navigate("/")} src={zostelLogo} alt="zostelLogo" />
         <div className="navContentOuterContainer">
           <div className="navInnerContent">
             HOSTELS
