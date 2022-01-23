@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.locate-us-container{
+    margin-top: 20px;
+}
+
+.heading{
+    margin-bottom: 18px;
+}
+
+.whatapp-direction-div a {
+    color: red;
+}
+.whatapp-direction-div a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.title-seperator >p { margin:0; line-height: 1.6; color: black; }
+
+.common-heading{
+    font-size: 21px; 
+    color: black;
+}
+
+.title-comman{
+    color: #4d585b;
+    font-weight: 600;
+}
+
+.locate-us-parent{
+    width: 85%;
+    margin: auto;
+}
+
+.address-parent-div > div{
+    display: inline-block;
+    justify-content: center;
+}
+
+.address-info-div{
+    vertical-align: top;
+    margin-left: 4px;
+    width: 36%;
+}
+
+.number{
+    color: black;
+    text-decoration: none;
+}
+.number:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.whatapp-direction-div > div{
+    margin-top: 17px;
+}
+
+.whatsapp-btn{
+    vertical-align: top;
+    border: 1px solid rgb(225, 225, 235);
+    width: 130px;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+}
+
+.Direction-heading{
+    font-size: 20px;
+    color: #4d585b;
+    font-weight: 600;
+}
+
+.direction-info{
+    border: 1px solid rgb(225, 225, 235);
+    max-width: 390px;
+    border-radius: 6px;
+    padding: 12px 12px;
+    background-color: #e8f0f2;
+    cursor: pointer;
+}
+
+.direction-details{
+    width: 414px;
+    margin: 0;
+    padding: 0;
+}
+
+.dir-details-txt{
+    padding: 15px;
+    line-height: 1.8;
+}
+
+.downarroy{
+    margin-left: 70%;
+}
+
+.getdirection-btn{
+    border: 1px solid rgb(225, 225, 235);
+    width: 150px;
+    padding: 10px 0 10px 17px;
+    border-radius: 5px;
+}
+
+.address-map-div{
+    width: 63%;
+}
+
+.map-image{
+    width: 810px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.div-seperator{
+    margin-bottom: 35px;
+}
+
+.title-seperator{
+    margin-top: 20px;    
+}
+
+.policy-div{
+    margin: 30px 0 50px 0;
+    padding-right: 34px;
+}
+
+.property-policy-div{
+    margin-top: 20px;
+}
+
+.cancellation-policy-div{
+    margin-top: 20px;
+}
+
+.ending-txt{
+    margin-top: 20px;
+}
