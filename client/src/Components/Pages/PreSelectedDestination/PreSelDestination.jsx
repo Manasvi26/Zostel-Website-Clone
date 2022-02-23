@@ -15,9 +15,9 @@ export const PreSelDestination = () => {
   const typeOfZostel = [
     {
       pre_title: "ZOSTEL",
-      title: "Zostel Manali",
+      title: "Zostel Shimla",
       description:
-        "Chill with us at Zostel Manali amidst panoramic Himalayan views, apple orchard and a gorgeous garden cafe. Located at the unbeatable location of Old Manali, our backpacker hostel is an ideal place to laze around with other backpackers.",
+        "Chill with us at Zostel Shimla amidst panoramic Himalayan views, apple orchard and a gorgeous garden cafe. Located at the unbeatable location of Old Shimla, our backpacker hostel is an ideal place to laze around with other backpackers.",
       image:
         "https://img.cdn.zostel.com/zostel/gallery/images/kR55bIDpRYC-2wYqnlT6jA/manali-20201112102605.jpg?w=700",
       price: "499",
@@ -26,7 +26,7 @@ export const PreSelDestination = () => {
       pre_title: "ZOSTEL HOME",
       title: "Zostel Home Burwa",
       description:
-        "Stay with us in Manali at an offbeat location away from crowds in a peaceful, premium homestay. Enjoy the warm hospitality and activities and live the simple, rural life with the locals!",
+        "Stay with us in Shimla at an offbeat location away from crowds in a peaceful, premium homestay. Enjoy the warm hospitality and activities and live the simple, rural life with the locals!",
       image:
         "https://img.cdn.zostel.com/zostel/gallery/images/DF_aaAWHSBmzAC2ZJVyedw/zostel-homes-burwa-20210716020158.jpg?w=700",
       price: "649",
@@ -44,7 +44,7 @@ export const PreSelDestination = () => {
       pre_title: "TRUSTED BY ZOSTEL",
       title: "GlampEco",
       description:
-        "For the first time in India, you can experience a stay in Geodesic Domes Glamping tents which are perched at a height of over 2600 mt, with a splendid view of Dhauldhar ranges and Manali valley.",
+        "For the first time in India, you can experience a stay in Geodesic Domes Glamping tents which are perched at a height of over 2600 mt, with a splendid view of Dhauldhar ranges and Shimla valley.",
       image:
         "https://img.cdn.zostel.com/zostel/gallery/images/e_SVFjxtRsOFJUggY84DGg/glampeco-20210316124546.jpg?w=700",
       price: "700",
@@ -60,8 +60,8 @@ export const PreSelDestination = () => {
     },
     {
       image: "https://img.cdn.zostel.com/blog_photo/old/River.jpg",
-      title: "Manali Travelogue: Unexplored Old Manal...",
-      description: "Offbeat places in Manali away from the noise of t...",
+      title: "Shimla Travelogue: Unexplored Old Manal...",
+      description: "Offbeat places in Shimla away from the noise of t...",
       name: "Siddharth Juneja",
     },
     {
@@ -85,7 +85,7 @@ export const PreSelDestination = () => {
       <>
         <div className="stay-plans-container">
           <h2 className="s-p-title">
-            Stays at <span className="s-p-sub-title">Manali</span>
+            Stays at <span className="s-p-sub-title">Shimla</span>
           </h2>
           <div className="stay-plans-parent">
             {typeOfZostel.map((el) => {
@@ -181,13 +181,13 @@ export const PreSelDestination = () => {
       <div className="preSel-container">
         <div className="poster-pic">
           <div className="poster-title-div">
-            <h1 className="poster-title">Manali</h1>
+            <h1 className="poster-title">Shimla</h1>
           </div>
         </div>
 
         <div className="title-about-div">
           <h1 className="t-welcome">Welcome to</h1>
-          <h1 className="t-manali">Manali</h1>
+          <h1 className="t-manali">Shimla</h1>
           <div className="m-about-div">
             <h3 className="m-about-t m-d-heading">About</h3>
             <div className="m-about-d">
@@ -203,21 +203,21 @@ export const PreSelDestination = () => {
               >
                 <p>
                   with abundant snow, and dreamers with a variety of flowers, a
-                  star-filled sky, and the pleasantest weather, Manali is a
+                  star-filled sky, and the pleasantest weather, Shimla is a
                   popular travel destination that disappoints nobody. Come here
                   for a hot plate of pasta amidst the mountains or an excursion
                   in the wilderness, this town in Himachal Pradesh has you
                   covered for it all.
                 </p>
-                <h3 className="m-d-heading">Why we Love Manali</h3>
+                <h3 className="m-d-heading">Why we Love Shimla</h3>
                 <p>
-                  Manali is very well known for its posh cafes that serve
+                  Shimla is very well known for its posh cafes that serve
                   cuisines ranging from Italian to Northeastern. A locally
                   brewed rice beer called Lugdi takes a little time to develop a
                   taste for, but once you do, you’ll thank us.
                 </p>
                 <p>
-                  Calling out all true-blue hikers, Manali not only has so much
+                  Calling out all true-blue hikers, Shimla not only has so much
                   to please your eyes, but also your thirst for adventure. A
                   number of hikes cater to a plethora of travellers who are
                   intrigued by the mighty mountains and nature’s glory. Among
@@ -238,7 +238,7 @@ export const PreSelDestination = () => {
                   his temple is still revered by the locals.
                 </p>
                 <p>
-                  It is said that every local family/resident in Manali owns at
+                  It is said that every local family/resident in Shimla owns at
                   least one apple tree, amidst other vegetation. The soil here
                   yields a high quality of fruits and vegetables, all thanks to
                   the Beas River. In peak season, blossoms of cherry, apple,
@@ -247,7 +247,7 @@ export const PreSelDestination = () => {
                 </p>
                 <p>
                   Unlike other places in India, where temples are made for Gods
-                  and their helpers alike, Manali happens to have a temple
+                  and their helpers alike, Shimla happens to have a temple
                   dedicated to a demon. The Goddess Hidimba was the demon wife
                   of Bhima and has the Hidimba temple to her name. f
                 </p>

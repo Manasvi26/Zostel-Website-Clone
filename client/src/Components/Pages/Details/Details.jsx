@@ -5,9 +5,9 @@ import { Footer } from "../SelectedDestination/Footer/Footer";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
-const Navigate = useNavigate();
-
 export const Details = () => {
+  const Navigate = useNavigate();
+
   //   const [fdata, setFData] = useState({
   //     firstname: "",
   //     middlename: "",
@@ -19,14 +19,14 @@ export const Details = () => {
   //     agree: true,
   //   });
 
-  //   const { loading, items, total, error } = useSelector((state) => {
-  //     return {
-  //       loading: state.cart.loading,
-  //       items: state.cart.items,
-  //       total: state.cart.total,
-  //       error: state.cart.error,
-  //     };
-  //   });
+  const { loading, items, total, error } = useSelector((state) => {
+    return {
+      loading: state.cart.loading,
+      items: state.cart.items,
+      total: state.cart.total,
+      error: state.cart.error,
+    };
+  });
 
   //   console.log(items, total);
 
@@ -38,10 +38,10 @@ export const Details = () => {
   //     });
   //   };
 
-  const nextPage = () => {
-    console.log("Hello");
-    return "12345";
-  };
+  // const nextPage = () => {
+  //   console.log("Hello");
+  //   return "12345";
+  // };
 
   //   const handleSubmit = (e) => {
   //     // e.preventDefault();
@@ -211,7 +211,7 @@ export const Details = () => {
                   <p style={{ marginLeft: "5%" }}>
                     ₹ 699 <span> x 1 night</span>
                   </p>
-                  <p>₹ 699</p>
+                  <p>₹ {total}</p>
                 </div>
               </div>
             </div>
@@ -220,11 +220,11 @@ export const Details = () => {
             </div>
             <div className="total">
               <h5>Total (tax incl.)</h5>
-              <p>₹ price</p>
+              <p>₹ {total}</p>
             </div>
             <div className="pay">
               <h5>Payable Now</h5>
-              <p>₹ price</p>
+              <p>₹ {total}</p>
             </div>
             <div className="agree">
               <input

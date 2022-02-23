@@ -165,7 +165,7 @@ export const Details = () => {
                   <input
                     id="inp"
                     name="phone"
-                    type="number"
+                    type="text"
                     onChange={handleChange}
                     placeholder="Enter phone number"
                     required
@@ -201,7 +201,7 @@ export const Details = () => {
                 <img src={items.rooms[0].image} alt="" />
               </div>
               <div className="detail-2">
-                <p style={{ marginRight: "30%" }}>4 Bed Mixed Dorm</p>
+                <p style={{ marginRight: "30%" }}>2 Bed Mixed Dorm</p>
                 <div className="detail-3">
                   <p style={{ marginLeft: "5%", marginBottom: "-5%" }}>
                     {total} <span> x 1 night</span>

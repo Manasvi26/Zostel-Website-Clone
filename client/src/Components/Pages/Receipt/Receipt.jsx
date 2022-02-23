@@ -93,7 +93,7 @@ export function Receipt() {
               color: "#43474b",
             }}
           >
-            your reservation is confirmed
+            Your reservation is confirmed
           </p>
           <p></p>
           <p
