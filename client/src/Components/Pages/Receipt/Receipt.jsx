@@ -5,6 +5,10 @@ import "./Receipt.css";
 import { useSelector } from "react-redux";
 
 export function Receipt() {
+  var currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+  var day = currentDate.getDate();
+  var month = currentDate.getMonth() + 1;
+  var year = currentDate.getFullYear();
   const { loading, items, total, error } = useSelector((state) => {
     return {
       loading: state.cart.loading,
@@ -15,9 +19,6 @@ export function Receipt() {
   });
   console.log(items);
 
-  const room1 = items.rooms[0].title;
-  // console.log(room1);
-  const room2 = items.rooms[1].title;
   // const room3 = items.rooms[2].title;
   // console.log(room2);
 
@@ -129,7 +130,7 @@ export function Receipt() {
               color: "#43474b",
             }}
           >
-            25 Jan 2022 (Check in: 11AM)
+            {`${day}/${month}/${year} (Check in: 11AM)`}
           </p>
 
           <p
