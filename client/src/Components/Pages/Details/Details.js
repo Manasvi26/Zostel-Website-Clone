@@ -220,16 +220,14 @@ export const Details = () => {
                 </div>
               </div>
             </div>
-            <div className="tax">
-              <h5>Tax</h5> <p>₹ 0</p>
-            </div>
+
             <div className="total">
               <h5>Total (tax incl.)</h5>
-              <p>₹ price</p>
+              <p>₹ {total}</p>
             </div>
             <div className="pay">
               <h5>Payable Now</h5>
-              <p>₹ price</p>
+              <p>₹ {total}</p>
             </div>
             <div className="agree">
               <input

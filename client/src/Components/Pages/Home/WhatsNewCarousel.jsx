@@ -99,7 +99,7 @@ const WhatsNewCarousel = () => {
                     // border: "1px solid green",
                     height: "255px",
                     backgroundColor: "#ffffff",
-                    padding: "16px 6px 2px 8px",
+                    padding: "4px 6px 2px 8px",
                   }}
                 >
                   <div
@@ -116,6 +116,7 @@ const WhatsNewCarousel = () => {
                       color: "#43505B",
                       fontSize: "14px",
                       fontWeight: "800",
+                      lineHeight: "21px",
                     }}
                   >
                     {item.title}
@@ -126,6 +127,7 @@ const WhatsNewCarousel = () => {
                       fontSize: "14px",
                       color: "#43474b",
                       lineHeight: "19px",
+                      marginBottom: "5px",
                     }}
                   >
                     {item.text}
@@ -137,6 +139,7 @@ const WhatsNewCarousel = () => {
                       fontSize: "17px",
                       border: "none",
                       height: "46px",
+                      cursor: "pointer",
                     }}
                     onClick={() => Navigate("/predestination")}
                   >

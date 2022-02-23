@@ -154,6 +154,7 @@ const ZostelHomesCarousel = () => {
                       height: "40px",
                       borderRadius: "none",
                       fontSize: "14px",
+                      cursor: "pointer",
                     }}
                     variant="contained"
                     size="large"

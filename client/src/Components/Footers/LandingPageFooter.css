@@ -86,12 +86,14 @@
     height: 40px;
     margin-bottom: 8%;
     border: none;
+    padding-left: 6px;
   }
   .first {
     box-shadow: 0px 3px 4.8px 0.2px rgb(0 0 0 / 20%);
     height: 40px;
     margin-bottom: 8%;
     border: none;
+    padding-left: 6px;
   }
   .btn {
     font-family: Arial;
@@ -133,8 +135,8 @@
     margin-left: 5.5%;
   }
 
-  a {
-    text-decoration: none;
+  div a {
+    color: grey;
   }
 
   .submain {
@@ -144,7 +146,7 @@
     grid-gap: 2%;
   }
   .main {
-    width: 100%;
+    width: 96%;
     background-color: rgb(217, 224, 224);
     color: black;
     padding: 28px;

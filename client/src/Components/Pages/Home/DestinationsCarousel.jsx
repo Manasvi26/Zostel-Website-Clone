@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useNavigate } from "react-router-dom";
 
 import alleppey from "../../../Assets/images/Alleppey.svg";
 import aurangabad from "../../../Assets/images/aurangabad.svg";
@@ -57,6 +58,8 @@ const DestinationsCarouselStyles = styled.div`
 `;
 
 const DestinationsCarousel = () => {
+  const Navigate = useNavigate();
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -139,71 +142,107 @@ const DestinationsCarousel = () => {
             itemClass="carousel-item-padding-40-px"
           >
             <div className="outerBox">
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={alleppey} alt="" />
                 <div>ALLEPPEY</div>
               </div>
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={mashobra} alt="" />
                 <div>MASHOBARA</div>
               </div>
             </div>
 
             <div className="outerBox">
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={aurangabad} alt="" />
                 <div>AURANGABAD</div>
               </div>
 
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={munroe} alt="" />
                 <div>MUNROE</div>
               </div>
             </div>
 
             <div className="outerBox">
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={bangalore} alt="" />
                 <div>BANGALORE</div>
               </div>
 
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={assam} alt="" />
                 <div>ASSAM</div>
               </div>
             </div>
 
             <div className="outerBox">
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={kinnaur} alt="" />
                 <div>KINNAUR</div>
               </div>
 
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={mumbai} alt="" />
                 <div>MUMBAI</div>
               </div>
             </div>
 
             <div className="outerBox">
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={bir} alt="" />
                 <div>BIR</div>
               </div>
 
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={mysore} alt="" />
                 <div>MYSORE</div>
               </div>
             </div>
 
             <div className="outerBox">
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={chennai} alt="" />
                 <div>CHENNAI</div>
               </div>
 
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={salmer} alt="" />
                 <div>SALMER</div>
               </div>
@@ -214,18 +253,27 @@ const DestinationsCarousel = () => {
                 <div>MANALI</div>
               </div>
 
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={coorg} alt="" />
                 <div>COORG</div>
               </div>
             </div>
             <div className="outerBox">
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={barot} alt="" />
                 <div>BAROT</div>
               </div>
 
-              <div className="innerBox">
+              <div
+                onClick={() => Navigate("/predestination")}
+                className="innerBox"
+              >
                 <img src={munroe} alt="" />
                 <div>MUNROE</div>
               </div>

@@ -138,16 +138,16 @@ export const UpperDescription = () => {
                 border: "0 solid #e2e8f0",
               }}
             >
-              Zostel Manali is set amidst panoramic Himalayan views, apple
+              Zostel Shimla is set amidst panoramic Himalayan views, apple
               orchards and a
               <br />
-              gorgeous garden cafe - at the unbeatable location of Old Manali.
-              Manali calls out to <br />
+              gorgeous garden cafe - at the unbeatable location of Old Shimla.
+              Shimla calls out to <br />
               the adventure and mountain lovers alike. With a gushing Beas river
               to augment its <br />
-              beauty, Manali is situated in a valley with views of high peaks
+              beauty, Shimla is situated in a valley with views of high peaks
               all around. Proud of <br />
-              offering something for everybody, Manali is an old favourite among
+              offering something for everybody, Shimla is an old favourite among
               backpackers and <br />
             </p>
             <Button type="button" onClick={handleShow}>
@@ -169,27 +169,27 @@ export const UpperDescription = () => {
                 border: "0 solid #e2e8f0",
               }}
             >
-              Zostel Manali is set amidst panoramic Himalayan views, apple
+              Zostel Shimla is set amidst panoramic Himalayan views, apple
               orchards and a
               <br />
-              gorgeous garden cafe - at the unbeatable location of Old Manali.
-              Manali calls out to
+              gorgeous garden cafe - at the unbeatable location of Old Shimla.
+              Shimla calls out to
               <br /> the adventure and mountain lovers alike. With a gushing
               Beas river to augment its <br />
-              beauty, Manali is situated in a valley with views of high peaks
+              beauty, Shimla is situated in a valley with views of high peaks
               all around. Proud of <br />
-              offering something for everybody, Manali is an old favourite among
+              offering something for everybody, Shimla is an old favourite among
               backpackers and <br />
               tourists alike. The adventure activities including snowboarding,
               trekking, and
               <br />
               paragliding set adrenaline rushing in adventure lovers and makes
               it their go-to <br />
-              destination all year round. Zostel Manali is located right at the
-              heart of Old Manali, the <br />
+              destination all year round. Zostel Shimla is located right at the
+              heart of Old Shimla, the <br />
               hub of backpackers. In search of peace and breathtaking views of
               the mountains, we <br />
-              went off-road and built the hostel in the village of Old Manali.
+              went off-road and built the hostel in the village of Old Shimla.
               The hostel also houses <br />
               The Garden Café, which serves authentic Himachali food.
             </p>

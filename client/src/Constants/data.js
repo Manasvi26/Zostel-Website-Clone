@@ -147,7 +147,7 @@ export const whatsNewData = [
     imageUrl:
       " https://img.cdn.zostel.com/cache/_7f057ea6f7e23b3841eb793d88fb9ae3/RoamOkPlease_233x260.jpg",
     title: "TRAVEL BACK SERIES- ROAM OK PLEASE!",
-    text: " Zostel brings you our very own travel web series. Every Monday, we'll be taking you on exciting new adventures across Zostel destinations in India—and maybe beyond! .",
+    text: " Zostel brings you our very own travel web series. Every Monday, we'll be taking you on exciting new adventures across Zostel destinations in India—and maybe beyond. So, set youself ready!",
   },
   {
     id: 4,
