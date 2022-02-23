@@ -15,6 +15,17 @@ export function Receipt() {
   });
   console.log(items);
 
+  const room1 = items.rooms[0].title;
+  // console.log(room1);
+  const room2 = items.rooms[1].title;
+  // const room3 = items.rooms[2].title;
+  // console.log(room2);
+
+  const formData = useSelector((state) => state.form.formData);
+  const firstName = formData.firstname;
+  const lastName = formData.lastname;
+  const phoneNumber = formData.phone;
+
   return (
     <div>
       <NavBar />
@@ -28,7 +39,11 @@ export function Receipt() {
           style={{ boxShadow: "5px 3px 5px 3px rgb(245, 238, 238)" }}
         >
           <h1>Zostel Shimla (KOTKHAI)</h1>
-          <h4 style={{ color: "grey" }}> {items.rooms[0].title}</h4>
+          <h4 style={{ color: "grey" }}>
+            {items.rooms.map((el) => (
+              <div>{el.title}</div>
+            ))}
+          </h4>
         </div>
         <div
           className="GuestDetails"
@@ -50,7 +65,7 @@ export function Receipt() {
               color: "#43474b",
             }}
           >
-            Tejshree Gund
+            {firstName + " " + lastName}
           </p>
           <p style={{ marginLeft: "-475px", color: "grey", fontWeight: "649" }}>
             Phone no:
@@ -63,7 +78,7 @@ export function Receipt() {
               color: "#43474b",
             }}
           >
-            9168105437
+            {phoneNumber}
           </p>
         </div>
         <div
@@ -158,7 +173,7 @@ export function Receipt() {
               color: "#43474b",
             }}
           >
-            Tejshree Gund
+            {firstName + " " + lastName}
           </p>
 
           <p

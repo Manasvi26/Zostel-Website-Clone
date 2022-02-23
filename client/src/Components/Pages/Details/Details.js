@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Details.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { add_data } from "../../../Features/Form/Actions";
 
 // import mainLogo from "../../../Assets/images/mainLogo.svg";
 
@@ -10,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 export const Details = () => {
   const Navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const { loading, items, total, error } = useSelector((state) => {
     return {
@@ -33,6 +35,8 @@ export const Details = () => {
     agree: true,
   });
 
+  // console.log(fdata);
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFData({
@@ -41,6 +45,12 @@ export const Details = () => {
     });
   };
   const handleSubmit = (e) => {
+    // console.log(fdata);
+    const addingFormData = add_data(fdata);
+    // console.log(addingFormData);
+
+    dispatch(addingFormData);
+
     Navigate("/otp-page");
     e.preventDefault();
     if (

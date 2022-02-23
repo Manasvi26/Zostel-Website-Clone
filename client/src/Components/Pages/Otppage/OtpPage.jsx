@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import "./OtpPage.css";
 import { useSelector } from "react-redux";
 import NavBar from "../../Headers/NavBar";
@@ -7,8 +8,11 @@ import { useNavigate } from "react-router-dom";
 
 function OtpPage() {
   const Navigate = useNavigate();
+  // const [phoneNumber, setPhoneNumber] = useState("");
 
   const { loading, items, total, error } = useSelector((state) => {
+    console.log(state.cart);
+
     return {
       loading: state.cart.loading,
       items: state.cart.items,
@@ -16,6 +20,9 @@ function OtpPage() {
       error: state.cart.error,
     };
   });
+
+  const number = useSelector((state) => state.form.formData.phone);
+  // console.log(number);
 
   return (
     <div>
@@ -67,7 +74,7 @@ function OtpPage() {
             marginLeft: "116px",
           }}
         >
-          Enter OTP sent to 9168105437
+          Enter OTP sent to {number}
         </h6>
         <input
           required
