@@ -223,7 +223,7 @@ export const UpperDescription = () => {
               Amenities
             </h3>
           </div>
-          <ul style={{ listStyleType: "none" }}>
+          <ul style={{ listStyleType: "none", marginRight: "10px" }}>
             <li>
               <MdTerrain style={{ width: "20px", height: "25px" }} />
               <span
@@ -269,7 +269,7 @@ export const UpperDescription = () => {
                   verticalAlign: "Top",
                 }}
               >
-                &nbsp;<strong> In-house Activities</strong>
+                &nbsp;<strong>Activities</strong>
               </span>
             </li>
             <li>
@@ -281,7 +281,7 @@ export const UpperDescription = () => {
                   verticalAlign: "Top",
                 }}
               >
-                &nbsp;<strong> Breakfast (Extra)</strong>
+                &nbsp;<strong> Breakfast</strong>
               </span>
             </li>
             <li>
@@ -299,7 +299,7 @@ export const UpperDescription = () => {
               </span>
             </li>
           </ul>
-          <ul style={{ listStyleType: "none" }}>
+          <ul style={{ listStyleType: "none", marginRight: "10px" }}>
             <li>
               <MdHotTub style={{ width: "20px", height: "25px" }} />
               <span
@@ -333,7 +333,7 @@ export const UpperDescription = () => {
                   verticalAlign: "Top",
                 }}
               >
-                &nbsp;<strong> Common hangout area</strong>
+                &nbsp;<strong> Common area</strong>
               </span>
             </li>
             <li>
@@ -361,7 +361,7 @@ export const UpperDescription = () => {
               </span>
             </li>
           </ul>
-          <ul style={{ listStyleType: "none" }}>
+          <ul style={{ listStyleType: "none", marginRight: "10px" }}>
             <li>
               <MdLocalLaundryService
                 style={{ width: "20px", height: "25px" }}

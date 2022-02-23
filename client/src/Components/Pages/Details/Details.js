@@ -45,22 +45,21 @@ export const Details = () => {
     });
   };
   const handleSubmit = (e) => {
-    // console.log(fdata);
-    const addingFormData = add_data(fdata);
+    console.log(fdata);
     // console.log(addingFormData);
 
-    dispatch(addingFormData);
-
-    Navigate("/otp-page");
     e.preventDefault();
     if (
-      fdata.address.length <= 10 &&
-      fdata.agree === true &&
-      fdata.email.length <= 5 &&
-      fdata.firstname.length <= 5 &&
-      fdata.lastname.length <= 5
+      fdata.email.length >= 5 &&
+      fdata.firstname.length >= 3 &&
+      fdata.lastname.length >= 3 &&
+      fdata.phone.length === 10
     ) {
-      return;
+      const addingFormData = add_data(fdata);
+      dispatch(addingFormData);
+      Navigate("/otp-page");
+    } else {
+      alert("Fill proper details");
     }
   };
   var elems = document.querySelectorAll(".check-box");
