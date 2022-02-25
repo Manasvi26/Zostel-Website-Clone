@@ -1,4 +1,5 @@
 import React from "react";
+import { firebase, auth } from "./firebase";
 import { useState } from "react";
 import "./OtpPage.css";
 import { useSelector } from "react-redux";
@@ -9,10 +10,50 @@ import { useNavigate } from "react-router-dom";
 function OtpPage() {
   const Navigate = useNavigate();
   // const [phoneNumber, setPhoneNumber] = useState("");
+  // Inputs
+  const [mynumber, setnumber] = useState("+91");
+  const [otp, setotp] = useState("");
+  const [show, setshow] = useState(false);
+  const [final, setfinal] = useState("");
+
+  // Sent OTP
+  const signin = () => {
+    if (mynumber === "" || mynumber.length < 10) return;
+
+    let verify = new firebase.auth.RecaptchaVerifier("recaptcha-container");
+    auth
+      .signInWithPhoneNumber(mynumber, verify)
+      .then((result) => {
+        setfinal(result);
+        alert("code sent");
+        setshow(true);
+      })
+      .catch((err) => {
+        alert(err);
+        window.location.reload();
+      });
+  };
+
+  // Validate OTP
+  const ValidateOtp = () => {
+    console.log(final);
+    if (otp === null || final === null) return;
+    final
+      .confirm(otp)
+      .then((result) => {
+        console.log(result);
+        if (result) {
+          Navigate("/receipt");
+        }
+        // success
+      })
+      .catch((err) => {
+        alert("Wrong code");
+      });
+  };
 
   const { loading, items, total, error } = useSelector((state) => {
-    console.log(state.cart);
-
+    // console.log(state.cart);
     return {
       loading: state.cart.loading,
       items: state.cart.items,
@@ -36,7 +77,7 @@ function OtpPage() {
             marginBottom: "30px",
           }}
         >
-          Enter OTP to confirm
+          OTP verification
         </h3>
         <div className="info">
           <img
@@ -52,7 +93,7 @@ function OtpPage() {
           </h4>
           <h5 className="lake">&nbsp;Sait Lake</h5>
           <p className="guest" style={{ color: "grey", marginLeft: "127px" }}>
-            2 Guests
+            1 Guests
           </p>
           <div
             style={{
@@ -66,37 +107,70 @@ function OtpPage() {
             Payble Amount : {total}/-
           </div>
         </div>
-        <h6
-          className="otp"
-          style={{
-            marginTop: "28px",
-            marginBottom: "15px",
-            marginLeft: "116px",
-          }}
-        >
-          Enter OTP sent to {number}
-        </h6>
-        <input
-          required
-          id="inp"
-          className="input2"
-          type="text"
-          name="OTP"
-          placeholder="enter otp"
-          style={{ marginLeft: "78px" }}
-        />
 
-        <button
-          onClick={() => Navigate("/receipt")}
-          className="buttons"
-          style={{
-            marginLeft: "78px",
-            width: "270px",
-            backgroundColor: "#de533d",
-          }}
-        >
-          Confirm
-        </button>
+        <div style={{ display: !show ? "block" : "none" }}>
+          <h6
+            className="otp"
+            style={{
+              marginTop: "28px",
+              marginBottom: "15px",
+              marginLeft: "116px",
+            }}
+          >
+            Enter your mobile number:
+          </h6>
+          <input
+            id="inp"
+            className="input2"
+            style={{ marginLeft: "78px" }}
+            value={mynumber}
+            onChange={(e) => {
+              setnumber(e.target.value);
+            }}
+            placeholder="phone number"
+          />
+          <br />
+          <br />
+          <div style={{ marginLeft: "60px" }} id="recaptcha-container"></div>
+          <button
+            className="buttons"
+            style={{
+              marginLeft: "78px",
+              marginBottom: "50px",
+              width: "270px",
+              backgroundColor: "#de533d",
+            }}
+            onClick={signin}
+          >
+            Send OTP
+          </button>
+        </div>
+        <div style={{ display: show ? "block" : "none" }}>
+          <input
+            type="text"
+            id="inp"
+            className="input2"
+            style={{ marginLeft: "78px", marginTop: "20px" }}
+            placeholder={"Enter your OTP"}
+            onChange={(e) => {
+              setotp(e.target.value);
+            }}
+          ></input>
+          <br />
+          <br />
+          <button
+            className="buttons"
+            style={{
+              marginLeft: "78px",
+              marginBottom: "20px",
+              width: "270px",
+              backgroundColor: "#de533d",
+            }}
+            onClick={ValidateOtp}
+          >
+            Verify
+          </button>
+        </div>
       </div>
       <br />
       <br />
