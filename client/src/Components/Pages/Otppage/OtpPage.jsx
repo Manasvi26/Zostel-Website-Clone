@@ -103,7 +103,6 @@ function OtpPage() {
       <br />
       <br />
       <br />
-
       <br />
       <br />
       <Footer />

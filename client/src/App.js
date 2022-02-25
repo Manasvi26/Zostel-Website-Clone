@@ -1,8 +1,8 @@
 import React from "react";
-import { auth } from "./firebase";
+import { auth } from "./Components/Pages/Otppage/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
-import Login from "./login";
-import Mainpage from "./main";
+import Login from "./Components/Pages/Otppage/login";
+import Mainpage from "./Components/Pages/Otppage/main";
 import Home from "./Components/Pages/Home/Home";
 import { DirectRoutes } from "./Components/Router/Routes";
 
