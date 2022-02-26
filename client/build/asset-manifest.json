@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e0fd5873.css",
+    "main.js": "/static/js/main.40ac1c99.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/featured_hostels1.png": "/static/media/featured_hostels1.22d7e31405751813e639.png",
+    "static/media/featured_hostels2.png": "/static/media/featured_hostels2.e05965830801bb84497a.png",
+    "static/media/zostel_reviews1.png": "/static/media/zostel_reviews1.fdae7c3181bc5878db37.png",
+    "static/media/zostel_reviews2.png": "/static/media/zostel_reviews2.8450520425a45c327667.png",
+    "static/media/bir.svg": "/static/media/bir.2afc29e729af29d725a3b4170c2d065d.svg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/aurangabad.svg": "/static/media/aurangabad.92404bb309fc93d90ea86b8813a90601.svg",
+    "static/media/Mashobra.svg": "/static/media/Mashobra.17c77a6bf2d7b4576c1c8d35fa38b62b.svg",
+    "static/media/kinnaur.svg": "/static/media/kinnaur.56f8efe14efe735b8f403d16de3a8616.svg",
+    "static/media/mysore.svg": "/static/media/mysore.6c0b7670c7335ee1f1de7f02917182ce.svg",
+    "static/media/chennai.svg": "/static/media/chennai.33b83506bab2a4fde458c077ac695645.svg",
+    "static/media/coorg.svg": "/static/media/coorg.dadc177a709a3f429d3ec1cc25c2dce1.svg",
+    "static/media/Alleppey.svg": "/static/media/Alleppey.ca5902429ca25fad99c17e4a8702de24.svg",
+    "static/media/Bangalore.svg": "/static/media/Bangalore.76e648e610d84ca6ceca0311346be43a.svg",
+    "static/media/jaisalmer.svg": "/static/media/jaisalmer.c4447643ea149936a388735523f79fa7.svg",
+    "static/media/barot.svg": "/static/media/barot.d335d6264a50828f1939f666a8425539.svg",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/Manali.svg": "/static/media/Manali.1a4644278128b46dd3717a174006d93a.svg",
+    "static/media/mcledo.svg": "/static/media/mcledo.afebbcfcae146710c80b48ce0dceb1ef.svg",
+    "static/media/Assam.svg": "/static/media/Assam.69449ed3bf0c1893bf49cf0a07d65e1e.svg",
+    "static/media/munroe.svg": "/static/media/munroe.c86dd0def59ef2e38692c660f53acd6d.svg",
+    "static/media/mumbai.svg": "/static/media/mumbai.7eb7cbb374db966b1998b3013004cb91.svg",
+    "index.html": "/index.html",
+    "main.e0fd5873.css.map": "/static/css/main.e0fd5873.css.map",
+    "main.40ac1c99.js.map": "/static/js/main.40ac1c99.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0fd5873.css",
+    "static/js/main.40ac1c99.js"
+  ]
+}
