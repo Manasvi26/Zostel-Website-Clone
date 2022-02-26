@@ -2,7 +2,7 @@
 
 Zostel is one of the largest and oldest networks of hostels and homes in India. It has presence in 44 cities in India and Nepal. In contrast to closed hotel rooms it provides a shared space of living, where people come as strangers and leave as friends. This is a MERN stack a clone of Zostel's website.
 
-![App Screenshot](https://mir-s3-cdn-cf.behance.net/project_modules/fs/04042059398625.5a20e1b8b7b95.jpg)
+![App Screenshot](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/ZOSTEL_LOGO_PNG_%281%29.png/1200px-ZOSTEL_LOGO_PNG_%281%29.png)
 
 
 ## Tech Stack
